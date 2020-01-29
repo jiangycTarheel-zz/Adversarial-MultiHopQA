@@ -41,7 +41,7 @@ CORENLP_CACHES = {
 
 COMMANDS = ['corenlp', 'dump-addDoc', 'gen-answer-set', 'gen-title-set', 'gen-all-docs']
 CORENLP_PORT = 8765
-CORENLP_LOG = 'corenlp.log'
+CORENLP_LOG = 'corenlp.log' 
 CATCH_ALL_NUM = 0
 
 def parse_args():
@@ -912,7 +912,7 @@ def main():
   elif OPTS.command == 'gen-title-set':
     generate_candidate_set(dataset, 'data/' + OPTS.dataset + '_title_set.json', source='title')
   elif OPTS.command == 'gen-all-docs':
-    generate_all_docs(dataset, 'data/' + OPTS.dataset + '_title_set.json')
+    generate_all_docs(dataset, 'data/' + 'all_' + OPTS.dataset + '_docs.json')
   elif OPTS.command == 'merge_files':
     merge_adv_examples('out/hotpot_' + OPTS.dataset + '_addDoc.json')
   else:
