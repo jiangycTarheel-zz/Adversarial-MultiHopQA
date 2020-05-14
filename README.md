@@ -60,6 +60,8 @@ python3 convert_sp_facts.py merge_files -d train
 ```
 This will create the adversarial training set in `out/hotpot_train_addDoc.json`
 
+**In order to recreate the adversarial training data we used in the paper, randomly sample 40% of the adversarial training data generated using this code and combine with the original HotpotQA training set.**
+
 
 # Citation
 ```
