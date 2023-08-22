@@ -60,6 +60,9 @@ python3 convert_sp_facts.py merge_files -d train
 ```
 This will create the adversarial training set in `out/hotpot_train_addDoc.json`
 
+#### Huggingface Datasets
+A dataset created following the procedure above is hosted on [Huggingface datasets](https://huggingface.co/datasets/sagnikrayc/adversarial_hotpotqa). The original authors bear no responsibility for this HF dataset and the uploader there should be contacted in case of any discrepancies. 
+
 **In order to recreate the adversarial training data we used in the paper, randomly sample 40% of the adversarial training data generated using this code and combine with the original HotpotQA training set.**
 
 
